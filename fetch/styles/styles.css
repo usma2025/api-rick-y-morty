@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.botones{
+    display: flex;
+    justify-content: space-between;
+}
+
+#buttonConsume {
+    margin: 24px 0;
+    background-color: rgb(166, 255, 0);
+    border: 0;
+    padding: 10px 100px;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+#buttonConsume:hover {
+    background-color: rgb(107, 150, 12);
+    transition-duration: 1s;
+}
+
+.listCharacters {
+    
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.listCharacters--character-container{
+    display: flex;
+}
+.listCharacters--character-container-2{
+    display: block;    
+}
+
+.listCharacters--character {
+    border: 1px solid #ccc;
+    border-radius: 10px;   
+}
+.listCharacters--character h1 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    
+}
+#green{
+    color: green;
+    margin-top: 10px;
+    margin-left: 80%;
+}
+#red{
+    color: red;
+    margin-top: 10px;
+    margin-left: 80%;
+}
+#gray{
+    color: gray ;
+    margin-top: 10px;
+    margin-left: 80%;
+}
+
+.fa-location-pin{
+    color: rgb(166, 255, 0);
+}
+.listCharacters--character img {
+    border-radius: 10px;
+    margin: 5px;
+    width: 200px;
+}
+
+.fa-mars {
+
+    margin-top: 10px;
+    font-size: 25px;
+    color: rgb(69, 69, 247)
+}
+.fa-venus{
+    margin-top: 10px;
+    font-size: 25px;
+    color: rgb(243, 51, 83) ;
+}
+
+@media (max-width: 700px){
+    .listCharacters {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px){
+    .listCharacters {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
